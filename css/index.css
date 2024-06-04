@@ -166,3 +166,85 @@ input[type="radio"] {
 .showtext a:hover {
     color: red;
 }
+
+.product {
+    margin-bottom: 5vw;
+}
+
+.product h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.product_info {
+    margin-top: 5vw;
+    display: flex;
+    margin-left: 4vw;
+}
+
+.product_info div img {
+    width: 550px;
+    height: 300px;
+    padding-right: 3vw;
+}
+
+.product_info div h3 , .product_info div p{
+    text-align: center;
+}
+
+.product_info div p {
+    font-size: 18px;
+}
+
+.product_info div h3 {
+    font-size: 25px;
+}
+
+.product_info div a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.product_info div a:hover {
+    color: red;
+}
+
+footer {
+    display: flex;
+    margin-bottom: 1vw;
+}
+
+footer div svg {
+    fill: red;
+    width: 200px;
+    position: absolute;
+    margin-left: 10vw;
+    margin-top: -1vw;
+}
+
+footer ul {
+    display: flex;
+    margin-top: -.5vw;
+    margin-left: 75vw;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: black;
+    margin-right: 1vw;
+}
+
+footer ul li a:hover {
+    color: red;
+}
+
+footer ul li {
+    color: white;
+}
+
+.cmp-modelselection__group {
+    border-top: 1px solid black;
+    margin-top: 4vw;
+    padding-bottom: 2rem;
+}
