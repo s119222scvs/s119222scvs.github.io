@@ -15,7 +15,7 @@ header svg {
     fill: red;
     width: 200px;
     position: absolute;
-    margin-left: 15vw;
+    margin-left: 11.5vw;
     margin-top: 0.5vw;
 }
 
@@ -188,16 +188,10 @@ input[type="radio"] {
     padding-right: 3vw;
 }
 
-.product_info div h3 , .product_info div p{
-    text-align: center;
-}
-
-.product_info div p {
-    font-size: 18px;
-}
-
 .product_info div h3 {
+    text-align: center;
     font-size: 25px;
+    margin-top: 2vw;
 }
 
 .product_info div a {
@@ -219,14 +213,14 @@ footer div svg {
     fill: red;
     width: 200px;
     position: absolute;
-    margin-left: 10vw;
+    margin-left: 11.5vw;
     margin-top: -1vw;
 }
 
 footer ul {
     display: flex;
     margin-top: -.5vw;
-    margin-left: 75vw;
+    margin-left: 73vw;
 }
 
 footer ul li a {
