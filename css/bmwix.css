@@ -1,0 +1,285 @@
+
+section img {
+    height: 48vw;
+    width: 100%;
+    margin-top: -1.65vw;
+    object-fit: cover;
+}
+
+.head h2{
+    font-size: 4vw;
+    color: white;
+    margin-top: -29vw;
+    margin-left: 10vw;
+}
+
+.info_right {
+    margin-top: 30vw;
+    margin-left: 13vw;
+}
+
+.header_right h2{
+    font-size: 4.3vw;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header_right h3 {
+    font-size: 2vw;
+    font-weight: 550;
+}
+
+.info_2_right {
+    margin-top: 10vw;
+}
+
+.info_2_right div p {
+    font-size: 20px;
+}
+
+.info_2_right div img {
+    height: 350px;
+    width: 700px;
+    margin-top: -15vw;
+    margin-left: 36vw;
+}
+
+.info_left {
+    margin-top: 15vw;
+    margin-left: 55vw;
+}
+
+.header_left h3 {
+    font-size: 2vw;
+    font-weight: 550;
+}
+
+.info_2_left {
+    margin-top: 4.5vw;
+}
+
+.info_2_left div p{
+    font-size: 18px;
+}
+
+.info_2_left div img {
+    height: 350px;
+    width: 700px;
+    margin-top: -14vw;
+    margin-left: -44vw;
+}
+
+.info_right_other {
+    margin-top: 15vw;
+    margin-left: 13vw;
+    margin-bottom: 10vw;
+}
+
+.detail-box {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15vw;
+    margin-bottom: 10vw;
+    margin-right: 15vw;
+}
+
+.txt-box {
+    max-width: 960px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    width: 25em;
+    padding: 1em 0;
+}
+
+.item .title {
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 2;
+    color: #fff;
+    background-color: #666;
+    width: 6.25em;
+    padding: .375em 0;
+    text-align: center;
+    border-radius: .1875em;
+    flex-shrink: 0;
+    margin-right: .5em;
+}
+
+.value {
+    color: #333;
+    font-size: 1em;
+    line-height: 1.67;
+    letter-spacing: .05em;
+}
+
+.interaction-box {
+    width: 17.5em;
+    max-height: 370px;
+    padding: 1.35em 0;
+    border-radius: .25em;
+    background-color: #fff;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.price-box {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 0 1.2em;
+}
+
+.price-box:before {
+    content: "";
+    width: 100%;
+    height: 1.5em;
+    position: absolute;
+    bottom: -1em;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: .09;
+    background-image: linear-gradient(180deg, transparent, #000);
+}
+
+.price-box .price {
+    border-right: 1px dotted #bababa;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.price-box .price .title {
+    font-weight: 900;
+    margin-right: .5em;
+    font-size: 1em;
+    line-height: 1.44;
+    letter-spacing: normal;
+    margin-bottom: .25em;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.price-box .price .info {
+    width: 100%;
+    text-align: center;
+}
+
+.price-box .price .info span:first-of-type {
+    font-size: 1em;
+    line-height: 1.05;
+}
+
+.price-box .price .info span:nth-of-type(2) {
+    color: #0470bd;
+    font-size: 2.25em;
+    font-weight: 700;
+    margin: 0 .06em;
+}
+
+.price-box .price .info span:nth-of-type(3) {
+    font-size: 1em;
+}
+
+.deposit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+}
+
+.deposit .title {
+    font-weight: 900;
+    margin-right: .5em;
+    font-size: 1em;
+    line-height: 1.44;
+    letter-spacing: normal;
+    margin-bottom: .25em;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.deposit .title span.ic {
+    width: 1.23em;
+    height: 1.23em;
+    margin-right: .25em;
+    background-image: url(https://bps.bmw.com.tw/assets/img/ic_money.62540ac4.svg);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-size: contain;
+}
+
+.deposit .info {
+    width: 100%;
+    text-align: center;
+}
+
+.deposit .info span:first-of-type {
+    font-size: 1em;
+    line-height: 1.05;
+}
+
+.deposit .info span:nth-of-type(2) {
+    color: #333;
+    font-size: 2.25em;
+    font-weight: 700;
+    margin: 0 .06em;
+}
+
+.deposit .info span:nth-of-type(3) {
+    font-size: 1em;
+}
+
+.btn-box {
+    margin-top: 3em;
+}
+
+.btn-reserver {
+    padding-right: .88em;
+}
+
+.btn-blue {
+    transition: .3s;
+    background-color: #0470bd;
+    color: #fff;
+}
+
+.btn-box a {
+    font-size: 1.4em;
+    width: 14.44em;
+    height: 2.77em;
+    margin: auto;
+    margin-bottom: .55em;
+    border-radius: .16em;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.btn-reserve:before {
+    width: .57em;
+    height: .57em;
+    transform: translate(3.35em, -50%);
+    background-image: url(https://bps.bmw.com.tw/assets/img/ic_arrow-right-white.9070c0fb.svg);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-size: contain;
+}
+

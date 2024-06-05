@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+<head>
+    <meta charset="UTF-8">
+    <title>BMW</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/buys.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/9897b6baeb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="brand">
+            BMW
+            <img class="brandimg" src="https://www.bmw.com.tw/content/dam/bmw/common/images/logo-icons/BMW/BMW_Grey-Colour_RGB.SVG.asset.1697707041685.SVG" alt="">
+        </a>
+            <div class="navigation">
+                <div class="navigation-items">
+                    <a href="ibmw.html">i系列</a>
+                    <a href="xbmw.html">X系列</a>
+                    <a href="mbmw.html">M系列</a>
+                    <a href="z4.html">z4系列</a>
+                    <a href="Motorrad.html">Motorrad</a>
+                </div>
+            </div>
+            <div class="navigation2">
+                <div class="navigation-items">
+                    <a href="index.html">首頁</a>
+                    <a href="about.html">關於我們</a>
+                    <a href="allbmw.html">所有車型</a>
+                </div>
+            </div>
+    </header>
+    <main>
+        <div class="cmp-modelselection__group"></div>
+        <div class="lightbox reserve active">
+            <div class="container">
+                <a href="#" class="btn-close"></a>
+                <div class="info-box">
+                    <div class="pic">
+                        <img src="https://bmw.astra.co.id/wp-content/uploads/2022/08/ix.png" alt="">
+                    </div>
+                    <div class="txt">
+                        <div class="name-box">
+                            <h3>
+                                <span class="series">I</span>
+                                <span class="txt">系列</span>
+                            </h3>
+                            <h2>
+                                BMW IX
+                            </h2>
+                        </div>
+                        <div class="price-box">
+                            <div class="price">
+                                <span class="title">
+                                    <span class="ic">
+                                        售價
+                                    </span>
+                                </span>
+                                <span class="info">
+                                    <span>$</span>
+                                    <span>439</span>
+                                    <span>萬</span>
+                                </span>
+                            </div>
+                            <div class="deposit">
+                                <span class="title">
+                                   <span class="ic"></span>
+                                   預付訂金
+                                </span>
+                                <span class="info">
+                                    <span>$</span>
+                                    <span>9</span>
+                                    <span>萬</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reserve-box">
+                    <div class="title">
+                        <h2>
+                            線上預訂資料
+                        </h2>
+                    </div>
+                    <form class="form-box">
+                        <div class="row-box">
+                            <div class="row">
+                                <p class="title">姓氏</p>
+                                <div class="input-box">
+                                    <input placeholder="請填寫您的姓氏" name="lastname" id="lastname">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="title">名字</p>
+                                <div class="input-box">
+                                    <input placeholder="請填寫您的名字" name="firstname" id="firstname">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-box">
+                            <div class="row">
+                                <p class="title">稱謂</p>
+                                <div class="select-box">
+                                    <select name="gender" id="gender">
+                                        <option disabled="disabled">請選擇您的稱謂</option>
+                                        <option value="1">先生</option>
+                                        <option value="0">女士</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="title">年齡</p>
+                                <div class="select-box">
+                                    <select name="age" id="age">
+                                        <option disabled="disabled">請選擇您的年齡</option>
+                                        <option value="20 歲以下">20 歲以下</option>
+                                        <option value="21-30 歲">21-30 歲</option>
+                                        <option value="31-40 歲">31-40 歲</option>
+                                        <option value="41-50 歲">41-50 歲</option>
+                                        <option value="51-60 歲">51-60 歲</option>
+                                        <option value="61-70 歲">61-70 歲</option>
+                                        <option value="70 歲以上">70 歲以上</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-box">
+                            <div class="row">
+                                <p class="title">身分證號碼</p>
+                                <div class="input-box">
+                                    <input placeholder="請填寫您的身分證號碼" name="pid" id="pid" maxlength="10">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="title">手機號碼</p>
+                                <div class="input-box">
+                                    <input placeholder="請填寫您的手機電話" name="mobile" id="mobile" maxlength="10">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-box">
+                            <div class="row address">
+                                <p class="title">通訊地址</p>
+                                <div class="select-box">
+                                    <select name="county" id="county">
+                                        <option value="請選擇縣市">請選擇縣市</option>
+                                        <option value="臺北市">臺北市</option>
+                                        <option value="新北市">新北市</option>
+                                        <option value="基隆市">基隆市</option>
+                                        <option value="桃園市">桃園市</option>
+                                        <option value="新竹市">新竹市</option>
+                                        <option value="新竹縣">新竹縣</option>
+                                        <option value="苗栗縣">苗栗縣</option>
+                                        <option value="臺中市">臺中市</option>
+                                        <option value="彰化縣">彰化縣</option>
+                                        <option value="南投縣">南投縣</option>
+                                        <option value="雲林縣">雲林縣</option>
+                                        <option value="嘉義市">嘉義市</option>
+                                        <option value="嘉義縣">嘉義縣</option>
+                                        <option value="臺南市">臺南市</option>
+                                        <option value="高雄市">高雄市</option>
+                                        <option value="屏東縣">屏東縣</option>
+                                        <option value="宜蘭縣">宜蘭縣</option>
+                                        <option value="花蓮縣">花蓮縣</option>
+                                        <option value="臺東縣">臺東縣</option>
+                                        <option value="澎湖縣">澎湖縣</option>
+                                        <option value="金門縣">金門縣</option>
+                                        <option value="連江縣">連江縣</option>
+                                    </select>
+                                </div>
+                                <div class="select-box">
+                                    <select name="district" id="district">
+                                        <option value="請選擇區域">請選擇區域</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="title"></p>
+                                <div class="input-box">
+                                    <input placeholder="請填寫您的詳細地址" name="address" id="address">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-box">
+                            <div class="row email">
+                                <p class="title">E-mail</p>
+                                <div class="input-box">
+                                    <input type="email" placeholder="請填寫您的E-mail" name="email" id="email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-box">
+                            <div class="row readonly">
+                               <p class="title">選擇線上預訂的經銷商</p>
+                                <div class="input-box">
+                                    <input type="text" name="dealer" id="dealer" readonly="readonly">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="title">預計購車方式</p>
+                                <div class="select-box">
+                                    <select name="howbuy" id="mode">
+                                        <option value disabled="disabled">請選擇預計購車方式</option>
+                                        <option value="現金購車">現金購車</option>
+                                        <option value="分期購車">分期購車</option>
+                                        <option value="租賃">租賃</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-box brand_1">
+                            <p class="title">您的現有車款：</p>
+                            <div class="row">
+                                <p class="title">品牌</p>
+                                <div class="select-box">
+                                    <select name="brand" id="brand">
+                                        <option value="" disabled="disabled">請選擇品牌</option>
+                                        <option value="BMW">BMW</option>
+                                        <option value="MINI">MINI</option>
+                                        <option value="首次購車">首次購車</option>
+                                        <option value="ALFA ROMEO">ALFA ROMEO</option>
+                                        <option value="ASTON MARTIN">ASTON MARTIN</option>
+                                        <option value="ALPINA">ALPINA</option>
+                                        <option value="AUDI">AUDI</option>
+                                        <option value="BENTLEY">BENTLEY</option>
+                                        <option value="CADILLAC">CADILLAC</option>
+                                        <option value="CHEVROLET">CHEVROLET</option>
+                                        <option value="CHRYSLER">CHRYSLER</option>
+                                        <option value="CITROEN">CITROEN</option>
+                                        <option value="FERRARI">FERRARI</option>
+                                        <option value="FIAT">FIAT</option>
+                                        <option value="FORD">FORD</option>
+                                        <option value="HONDA">HONDA</option>
+                                        <option value="HUMMER">HUMMER</option>
+                                        <option value="HYUNDAI">HYUNDAI</option>
+                                        <option value="INFINITI">INFINITI</option>
+                                        <option value="JAGUAR">JAGUAR</option>
+                                        <option value="JEEP">JEEP</option>
+                                        <option value="KIA">KIA</option>
+                                        <option value="LAMBORGHINI">LAMBORGHINI</option>
+                                        <option value="LAND ROVER">LAND ROVER</option>
+                                        <option value="LEXUS">LEXUS</option>
+                                        <option value="LOTUS">LOTUS</option>
+                                        <option value="LUXGEN">LUXGEN</option>
+                                        <option value="MASERATI">MASERATI</option>
+                                        <option value="MAZDA">MAZDA</option>
+                                        <option value="MCLAREN">MCLAREN</option>
+                                        <option value="MERCEDES BENZ">MERCEDES BENZ</option>
+                                        <option value="MITSUBISHI">MITSUBISHI</option>
+                                        <option value="NISSAN">NISSAN</option>
+                                        <option value="PEUGEOT">PEUGEOT</option>
+                                        <option value="PORSCHE">PORSCHE</option>
+                                        <option value="REAULT">REAULT</option>
+                                        <option value="ROLLS ROYCE">ROLLS ROYCE</option>
+                                        <option value="SAAB">SAAB</option>
+                                        <option value="SKODA">SKODA</option>
+                                        <option value="SMART">SMART</option>
+                                        <option value="SUBARU">SUBARU</option>
+                                        <option value="SUZUKI">SUZUKI</option>
+                                        <option value="SSANGYONG">SSANGYONG</option>
+                                        <option value="TESLA">TESLA</option>
+                                        <option value="TOYOTA">TOYOTA</option>
+                                        <option value="VOLVO">VOLVO</option>
+                                        <option value="VOLKSWAGEN">VOLKSWAGEN</option>
+                                        <option value="其它">其它</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="title">車款</p>
+                                <div class="select-box">
+                                    <select name="currentcar" id="currentcar">
+                                        <option value disabled="disabled">請選擇車款</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-box hide">
+                            <input type="hidden" name="car_id" id="car_id" value="7869">
+                            <input type="hidden" name="model_name" id="model_name" value="S 1000 RR">
+                            <input type="hidden" name="invoice" id="invoice" value="至經銷商領取">
+                        </div>
+                        <div class="row-box">
+                            <p class="mark">提交表格前，請確保上述資料皆正確無誤；姓名欄位內容需與身分證明文件相同</p>
+                        </div>
+                        <div class="row-box">
+                            <div class="row check">
+                                <div class="check-box list unchecked">
+                                    <label class="style-chrck"></label>
+                                    <label class="text-check">
+                                        請點擊展開詳讀
+                                        <a href="#">BMW線上預訂條款與規則</a>
+                                        ，並點選「同意條款」按鈕以完成此項目勾選
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-box">
+                            <div class="row check">
+                                <div class="check-box use_info unchecked">
+                                    <input type="checkbox" name="use_info" id="use_info">
+                                    <label class="style-chrck"></label>
+                                    <label class="text-check">
+                                        我已點擊展開詳讀
+                                        <a href="#">資料使用同意條款</a>
+                                        ，同意BMW總代理汎德股份有限公司得將本人之個人資料經電腦處理後， BMW總代理汎德股份有限公司及其所屬汎德股份有限公司其他關係企業暨其特約經銷商等使用，以及為提升客戶服務品質、車輛資訊之提供及推廣客戶關懷活動而使用。
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-box list">
+                            <div class="row check">
+                                <div class="check-box">
+                                    <input type="checkbox" name="subscribe" id="subscribe" value="edm">
+                                    <label for="reserve_edm" class="style-chrck"></label>
+                                    <label for="reserve_edm" class="text-check">我想訂閱 BMW 電子報，隨時掌握品牌動態、新車情報、售後服務等最新資訊。</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-box">
+                            <a href="btn-blue btn-next">送出線上預訂資料</a>
+                            <a href="Motorrad.html" class="btn-gray btn-prev">返回選擇其他車款</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>

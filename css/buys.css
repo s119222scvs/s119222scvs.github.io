@@ -1,0 +1,573 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+}
+
+.brand, .navigation-items a, .navigation-items a:before {
+    color: black;
+    text-decoration: none;
+}
+
+.cmp-modelselection__group {
+    border-top: 1px solid black;
+    margin-top: 3.5vw;
+    padding-bottom: 2rem;
+}
+
+.navigation-items a:before {
+    content: '';
+    position: absolute;
+    background: black;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+.lightbox.active {
+    transform: translateX(0);
+    transition: .3s;
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    display: block;
+    padding-top: 5vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin: auto;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.lightbox .container {
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container a.btn-close {
+    position: fixed;
+    right: 13.6em;
+}
+
+.lightbox .container a.btn-close {
+    width: 1.5em;
+    height: 1.5em;
+    top: 2.5em;
+    z-index: 5;
+}
+
+.container .info-box {
+    display: flex;
+    align-items: center;
+    padding-left: 3.9em;
+    padding-right: 4.2em;
+    padding-bottom: 3.05em;
+    border-bottom: .05em dashed #707070;
+}
+
+.container .info-box .pic {
+    width: 28em;
+    margin-right: 2.85em;
+}
+
+.container .info-box .pic img {
+    border-radius: .25em;
+}
+
+img {
+    width: 130%;
+    height: auto;
+    display: block;
+}
+
+.container .info-box .txt {
+    display: flex;
+    flex-direction: column;
+    color: #393939;
+}
+
+.container .info-box .txt .name-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.1em;
+}
+
+.container .info-box .txt .name-box h3 {
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+}
+
+.container .info-box .txt .name-box h3 .series {
+    font-size: 3.5em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    font-weight: 700;
+    margin-right: .08em;
+}
+
+.container .info-box .txt .name-box h3 .txt {
+    font-size: 2.9em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+}
+
+.container .info-box .txt .name-box h2 {
+    font-size: 2.5em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 1.35;
+    position: relative;
+}
+
+.container .info-box .txt .name-box h2:before {
+    content: "";
+    width: 1px;
+    height: 1.05em;
+    background-color: #707070;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -.5em;
+}
+
+.container .info-box .txt .price-box .price {
+    margin-bottom: .5em;
+}
+
+.container .info-box .txt .price-box .price, .container .info-box .txt .price-box .deposit {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding-bottom: .5em;
+    position: relative;
+}
+
+.container .info-box .txt .price-box .deposit:before, .container .info-box .txt .price-box .price:before {
+    content: "";
+    width: 9.2em;
+    height: 1px;
+    border-bottom: .05em dashed #707070;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.container .info-box .txt .price-box .price .title {
+    font-size: 1.3em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    font-weight: 700;
+}
+
+.container .info-box .txt .price-box .price .info {
+    display: flex;
+    align-items: flex-end;
+}
+
+.container .info-box .txt .price-box .price .info span:first-of-type {
+    font-size: 1.3em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    margin-left: .26em;
+    margin-right: .15em;
+}
+
+.container .info-box .txt .price-box .price .info span:nth-of-type(2) {
+    font-size: 2.8em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    color: #0470bd;
+    font-weight: 700;
+}
+
+.container .info-box .txt .price-box .price .info span:nth-of-type(3) {
+    font-size: 1.3em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    margin-left: .16em;
+}
+
+.container .info-box .txt .price-box .deposit .title {
+    font-size: 1.3em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+}
+
+.container .info-box .txt .price-box .deposit .info {
+    display: flex;
+    align-items: flex-end;
+}
+
+.container .info-box .txt .price-box .deposit .info span:first-of-type {
+    font-size: 1.3em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    margin-left: .26em;
+    margin-right: .15em;
+}
+
+.container .info-box .txt .price-box .deposit .info span:nth-of-type(2) {
+    font-size: 2.8em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+}
+
+.container .info-box .txt .price-box .deposit .info span:nth-of-type(3) {
+    font-size: 1.3em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    margin-left: .16em;
+}
+
+.container .reserve-box {
+    padding-top: 3.075em;
+    padding-left: 3.9em;
+    padding-right: 4.2em;
+    box-sizing: border-box;
+}
+
+.container .reserve-box .title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container .reserve-box .title h2 {
+    font-size: 2.5em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    color: #333;
+    line-height: 1.47;
+    letter-spacing: normal;
+    padding-left: .6em;
+    position: relative;
+    margin-right: .52em;
+}
+
+.container .reserve-box .title h2:before {
+    content: "";
+    width: .21em;
+    height: .95em;
+    background-color: #0470bd;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.reserve .container .form-box {
+    background-color: #fff;
+    border-radius: .25em;
+    padding-top: 3.75em;
+    padding-bottom: 7.85em;
+    position: relative;
+}
+
+.reserve .container .form-box .row-box {
+    max-width: 1130px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reserve .container .form-box .row-box.brand {
+    flex-wrap: wrap;
+}
+
+.reserve .container .form-box .row-box.hide {
+    display: none;
+}
+
+.reserve .container .form-box .row-box .row {
+    max-width: 540px;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.reserve .container .form-box .row-box .row .title {
+    font-size: 1.3em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    color: #333;
+    letter-spacing: normal;
+    margin-bottom: .83em;
+}
+
+.reserve .container .form-box .row-box .row .input-box {
+    width: 100%;
+    max-width: 540px;
+    height: 3em;
+    border-radius: .5em;
+    border: 1px solid #666;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.reserve .container .form-box .row-box .row .input-box input {
+    font-size: 1.1em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    color: #333;
+    width: 100%;
+    height: 100%;
+    padding-left: 1.25em;
+    box-sizing: border-box;
+}
+
+input:-webkit-autofill {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input, select {
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+input {
+    line-height: normal;
+}
+
+button, input, select {
+    font-family: inherit;
+    font-size: 100%;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    margin: 0;
+}
+
+button, select {
+    text-transform: none;
+}
+
+.reserve .container .form-box .row-box .row .select-box {
+    position: relative;
+}
+
+.reserve .container .form-box .row-box .row .select-box {
+    width: 100%;
+    max-width: 540px;
+    height: 3em;
+    border-radius: .5em;
+    border: 1px solid #666;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.reserve .container .form-box .row-box .row .select-box:before {
+    content: "";
+    width: .8em;
+    height: .8em;
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    transform: translateY(-50%);
+    background: url(https://bps.bmw.com.tw/assets/img/ic_arrow-down-gray.cbaff336.svg) no-repeat 50% / contain;
+    pointer-events: none;
+}
+
+.reserve .container .form-box .row-box .row .select-box select {
+    cursor: pointer;
+}
+
+.reserve .container .form-box .row-box .row .select-box select {
+    font-size: 1.1em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    color: #333;
+    width: 100%;
+    height: 100%;
+    padding-left: 1.25em;
+    box-sizing: border-box;
+}
+
+option:disabled {
+    color: light-dark(graytext, rgb(170, 170, 170));
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    white-space: nowrap;
+}
+
+.reserve .container .form-box .row-box.brand_1 {
+    flex-wrap: wrap;
+}
+
+.reserve .container .form-box .row-box.brand_1 p {
+    width: 100%;
+    font-size: 1.3em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    line-height: 1.5;
+    margin-bottom: 1.22em;
+    color: #393939;
+}
+
+.reserve .container .form-box .row-box .row.address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.reserve .container .form-box .row-box .row.address .title {
+    width: 100%;
+}
+
+.reserve .container .form-box .row-box .row.address .select-box {
+    max-width: 245px;
+}
+
+.container .reserve-box .btn-box {
+    display: flex;
+    justify-content: center;
+}
+
+.reserve .container .form-box .btn-box {
+    margin-top: 2.5em;
+}
+
+.container .reserve-box .btn-box .btn-blue {
+    background-color: #0470bd;
+    order: 1;
+}
+
+.container .reserve-box .btn-box a {
+    margin: 1.11em;
+}
+
+.lightbox .container .btn-box a {
+    width: 14.44em;
+    background-color: #0470bd;
+    color: #fff;
+}
+
+.btn-box a.btn-blue {
+    background-color: #0470bd;
+    color: #fff;
+    transition: .3s;
+}
+
+.btn-box a {
+    font-size: 1.2em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: .06em;
+    border-radius: .27em;
+    height: 3.88em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.container .reserve-box .btn-box .btn-gray[data-v-f11b8520] {
+    background-color: #666;
+    order: -1;
+}
+
+.reserve .container .form-box .row-box .row .check-box .style-check {
+    height: .8em;
+    width: .8em;
+    border-radius: .166em;
+    border: 1px solid #333;
+    margin-right: .55em;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.reserve .container .form-box .row-box .row.check .style-check {
+    margin-top: .25em;
+    align-self: flex-start;
+}
+
+.reserve .container .form-box .row-box .row .check-box label {
+    font-size: .1em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+}
+
+.reserve .container .form-box .row-box .row .check-box .style-check:before {
+    content: "";
+    height: .3em;
+    width: .5em;
+    border: .1em solid transparent;
+    border-top: none;
+    border-right: none;
+    position: absolute;
+    background-color: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%) rotate(-45deg);
+}
+
+.reserve .container .form-box .row-box .row .check-box .text-check {
+    font-size: 1.1em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    color: #333;
+}
+
+.reserve .container .form-box .row-box {
+    max-width: 1130px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.container .reserve-box p.mark {
+    font-size: 1em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    color: #393939;
+    line-height: 1.43;
+    margin-bottom: 2.14em;
+}
+
+.reserve .container .form-box .row-box .row.check .check-box {
+    width: 100%;
+    height: auto;
+}
+
+.reserve .container .form-box .row-box .row.check {
+    max-width: 100%;
+    font-size: .9em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    line-height: 1.57;
+    margin-bottom: .85em;
+}
+
+.reserve .container .form-box .row-box .row .check-box {
+    width: 42.5%;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.reserve .container .form-box .row-box .row .check-box input {
+    height: 0;
+    width: 0;
+}
+
+.reserve .container .form-box .row-box .row .check-box a {
+    color: #0470bd;
+    text-decoration: underline;
+    display: inline-block;
+    cursor: pointer;
+}
+
+label {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.reserve .container .form-box .row-box .row .check-box.unchecked .style-check {
+    border-color: #c4c1c1;
+}

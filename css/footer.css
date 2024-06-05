@@ -1,0 +1,89 @@
+footer {
+    width: 100%;
+    background-color: #fff;
+}
+
+footer {
+    display: block;
+}
+
+footer, div, p, li, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.22em 7em;
+    max-width: 1920px;
+    margin: auto;
+}
+
+.container p {
+    font-size: 1em;
+    color: #000;
+    line-height: normal;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+}
+
+.container .link-box {
+    display: flex;
+    align-items: center;
+}
+
+.container ul.link-box {
+    display: flex;
+    justify-content: center;
+    margin-right: 2em;
+}
+
+ul {
+    list-style: none;
+}
+
+.container ul.link-box li {
+    margin-left: 1.8em;
+    position: relative;
+}
+
+.container ul.link-box li:not(:last-of-type):before {
+    content: "";
+    width: 1px;
+    height: .7em;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    right: -1em;
+    transform: translateY(-50%);
+}
+
+.container ul.link-box li a {
+    font-size: 1em;
+    color: #000;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.noPrint a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #000;
+    display: block;
+    cursor: pointer;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+}
+
+.container ul.social-box {
+    display: flex;
+}
+
+.container ul.social-box  li a i{
+    width: 100%;
+    height: 1em;
+    margin: 0 .5em;
+}

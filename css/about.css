@@ -1,0 +1,148 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: block;
+    min-height: 1px;
+    min-width: 1px;
+}
+
+.image {
+    position: relative;
+    display: block;
+    padding-bottom: 45.04505%;
+}
+
+.main {
+    position: relative;
+    margin-left: 6.5vw;
+    margin-right: auto;
+    max-width: 1680px;
+}
+
+.font {
+    padding-left: unset; 
+    padding-right: 15px;
+    position: absolute;
+    text-align: left;
+}
+
+.font h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: 300;
+    margin-top: -32vw;
+    margin-left: 6vw;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+}
+
+.ConnectedDrive {
+    margin: 5em auto;
+    width: 100%;
+    line-height: 1.5em;
+    font-size: 16px;
+}
+
+.ConnectedDrive h2 {
+    padding: 0.5em 0.2em;
+    border-top: 2px solid rgb(4, 112, 189);
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+    font-size: 2.3em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin: -50px auto 0px;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+}
+
+.px-3 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.content {
+    margin: 2em auto;
+    width: 90%;
+}
+
+.content h3 {
+    color: rgb(4, 112, 189);
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+}
+
+.content p {
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+}
+
+.small {
+    color: gray;
+    font-size: 0.875em;
+}
+
+.about_img {
+    height: 200px;
+    width: 200px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 8vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about {
+    margin-top: 7vw;
+    margin-bottom: 30vw;
+}
+
+.aboutme {
+    position: absolute;
+    margin-top: 20vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.aboutme h3 {
+    position: absolute;
+    margin-top: -1vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.3em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+}
+
+.about p {
+    margin-top: 2vw;
+    font-size: 1.8em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+}
+
+.about_1 {
+    margin-bottom: 50vw;
+}
+
+.about_1 img {
+    margin-top: 2vw;
+}
+
+.aboutme_1 h3 {
+    position: absolute;
+    margin-top: 11.3vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.3em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+}
+
+.aboutme_1 p {
+    position: absolute;
+    margin-top: 15vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+}

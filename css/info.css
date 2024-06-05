@@ -1,0 +1,355 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+}
+
+.brand, .navigation-items a, .navigation-items a:before {
+    color: black;
+}
+
+.cmp-modelselection__group {
+    border-top: 1px solid black;
+    margin-top: 4vw;
+    padding-bottom: 2rem;
+}
+
+.navigation-items a:before {
+    content: '';
+    position: absolute;
+    background: black;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+div, .item a, img, h3, span, h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline; 
+}
+
+.car-box {
+    display: flex;
+    margin-top: 3vw;
+    margin-right: 1vw;
+    margin-left: 14vw;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-bottom: 1em;
+}
+
+.item {
+    position: relative;
+    width: 20em;
+}
+
+.item a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.pic {
+    width: 20em;
+    position: relative;
+}
+
+.pic img{
+    border-top-right-radius: .4em;
+    border-top-left-radius: .4em;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.info-box {
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    border-top-right-radius: .4em;
+    border-top-left-radius: .4em;
+    transform: translateY(-.5em);
+    padding-top: .4em;
+    position: relative;
+}
+
+.name-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: .3em;
+    margin-left: 1.3em;
+    padding-right: .5em;
+}
+
+.name-box h3 {
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+    flex-shrink: 0;
+}
+
+.series {
+    font-size: 2em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    font-weight: 700;
+    letter-spacing: normal;
+    margin-right: .13em;
+    color: #393939;
+    line-height: 1.34;
+}
+
+.txt {
+    font-size: 1.5em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    letter-spacing: normal;
+    line-height: 1.33;
+}
+
+.icon {
+    margin-left: .25em;
+}
+
+.icon.i {
+    width: 1.2em;
+    height: 1.45em;
+    background-image: url("https://www.bmw.com.tw/content/dam/bmw/common/images/logo-icons/BMW_i/BMW_i_100px.png.asset.1583221945801.png");
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: center;
+    background-size: contain;
+}
+
+.icon.M {
+    width: 1.2em;
+    height: 1.45em;
+    background-image: url("https://www.bmw.com.tw/content/dam/bmw/common/images/logo-icons/BMW_M/BMW_M_100px.png.asset.1583225507175.png");
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: center;
+    background-size: contain;
+}
+
+.name-box h2 {
+    font-size: 1.2em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    letter-spacing: normal;
+    line-height: 1.35;
+    position: relative;
+}
+
+.name-box h2:before {
+    content: "";
+    width: 1px;
+    height: 1.25em;
+    background-color: #707070;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -.5em;
+}
+
+.detail-box {
+    background-color: #fff;
+    color: #393939;
+    padding-bottom: 1.65em;
+    border-bottom-right-radius: .4em;
+    border-bottom-left-radius: .4em;
+    position: relative;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dotted #d0d0d0;
+    border-top: 1px dotted #d0d0d0;
+}
+
+.number {
+    border-right: 1px dotted #d0d0d0;
+    width: 60%;
+}
+
+.power {
+    display: flex;
+    align-items: center;
+    padding: .6em .25em .6em 1em;
+    border-bottom: 1px dotted #d0d0d0;
+}
+
+.power .title,  .milage .title{
+    width: 4.8em;
+    flex-shrink: 0;
+    font-size: .8em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    font-weight: 900;
+    line-height: 1.46;
+    margin-right: .8em;
+    text-align-last: justify;
+}
+
+.power .info,  .milage .info{
+    font-size: 1em;
+    line-height: 1.31;
+}
+
+.milage {
+    display: flex;
+    align-items: center;
+    padding: .6em .25em .6em 1em;
+}
+
+.unit {
+    font-size: .9em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+}
+
+.price {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.price .title {
+    font-weight: 900;
+    font-size: .8em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    line-height: 1.46;
+    letter-spacing: normal;
+    margin-bottom: .25em;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    margin-right: .5em;
+}
+
+.price .title span.ic {
+    width: 1.23em;
+    height: 1.23em;
+    margin-right: .25em;
+    background-image: url("https://bps.bmw.com.tw/assets/img/ic_money.62540ac4.svg");
+    background-position-x: 50%;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.price .info {
+    width: 100%;
+}
+
+.price .info span.type1, .price .info span.type3 {
+    font-size: .75em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+}
+
+.price .info span.type2 {
+    font-size: 1.6em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    font-weight: 700;
+    margin: 0 .11em;
+}
+
+.bottom {
+    display: flex;
+    border-bottom: 1px dotted #d0d0d0;
+    margin-bottom: 1.225em;
+}
+
+.address {
+    display: flex;
+    padding: .6em 1em;
+}
+
+.address .title {
+    width: 4.8em;
+    flex-shrink: 0;
+    font-size: .8em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    font-weight: 900;
+    line-height: 1.46;
+    margin-right: .8em;
+    text-align-last: justify;
+}
+
+.address .info {
+    font-size: .8em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    line-height: 1.43;
+}
+
+.btn-box {
+    display: flex;
+    padding: 0 .5em;
+}
+
+.btn-box a.btn-info {
+    color: #fff;
+    background-color: #0470bd;
+    border: 1px solid transparent;
+}
+
+.info-box .btn-box a {
+    width: 8.4375em;
+    height: 2.5em;
+    text-align: center;
+    margin: auto;
+    font-size: 1em;
+    font-family: "Roboto Slab", "cwTeXYen", sans-serif;
+    font-weight: 900;
+    line-height: 1.25;
+    letter-spacing: normal;
+    padding-right: 1.625em;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.btn-box a {
+    border-radius: .27em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.btn-box a.btn-info:before {
+    background-image: url(https://bps.bmw.com.tw/assets/img/ic_info.88b68d84.svg);
+    background-position-x: 50%;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.btn-box a:before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: 50%;
+    right: 1.34em;
+    transform: translateY(-50%);
+}
+
+.BMW_header {
+    margin-left: 12vw;
+    margin-top: 3vw;
+    margin-bottom: -3vw;
+    font-size: 1.7em;
+}
